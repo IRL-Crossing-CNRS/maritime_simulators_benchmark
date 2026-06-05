@@ -1,0 +1,2 @@
+Agent Configuration,Number of Agents,Max Simulation Time,Preparation Update (ms),Pre Update (ms),Update (ms),Post Update (ms),Total Execution Time of 1 loop gazebo (ms),Real Time Factor (%),CPU Usage (%),GPU Usage (%)
+"{""Lrauv"": 600}",600,600,395.91,41.49,117.47,118.28,673.15,72.61,9.88,1.34

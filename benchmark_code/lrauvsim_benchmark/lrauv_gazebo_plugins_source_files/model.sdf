@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<!--
+  Development of this module has been funded by the Monterey Bay Aquarium
+  Research Institute (MBARI) and the David and Lucile Packard Foundation
+-->
+<sdf version="1.9">
+  <model name="tethys">
+    <enable_wind>true</enable_wind>
+
+    <include merge="true">
+      <!-- align with NED (face North) -->
+      <pose degrees="true">0 0 0 0 0 -90</pose>
+      <uri>tethys</uri>
+
+      <!-- Sensors -->
+      <experimental:params>
+        <sensor
+          element_id="base_link"
+          action="add"
+          name="salinity_sensor"
+          type="custom"
+          gz:type="salinity">
+          <!-- <always_on>1</always_on>
+          <update_rate>2</update_rate> -->
+          <always_on>false</always_on>
+          <update_rate>0</update_rate>
+          <visualize>false</visualize>
+          <topic>/model/tethys/salinity</topic>
+          <gz:salinity>
+            <noise type="gaussian">
+              <mean>0.00001</mean>
+              <stddev>0.00001</stddev>
+            </noise>
+          </gz:salinity>
+        </sensor>
+        <sensor
+          element_id="base_link"
+          action="add"
+          name="temperature_sensor"
+          type="custom"
+          gz:type="temperature">
+          <!-- <always_on>1</always_on>
+          <update_rate>2</update_rate> -->
+          <always_on>false</always_on>
+          <update_rate>0</update_rate>
+          <visualize>false</visualize>
+          <topic>/model/tethys/temperature</topic>
+          <gz:temperature>
+            <noise type="gaussian">
+              <mean>0.00001</mean>
+              <stddev>0.00001</stddev>
+            </noise>
+          </gz:temperature>
+        </sensor>
+        <sensor
+          element_id="base_link"
+          action="add"
+          name="chlorophyll_sensor"
+          type="custom"
+          gz:type="chlorophyll">
+          <!-- <always_on>1</always_on>
+          <update_rate>2</update_rate> -->
+          <always_on>false</always_on>
+          <update_rate>0</update_rate>
+          <visualize>false</visualize>
+          <topic>/model/tethys/chlorophyll</topic>
+          <gz:chlorophyll>
+            <noise type="gaussian">
+              <mean>0.00001</mean>
+              <stddev>0.00001</stddev>
+            </noise>
+          </gz:chlorophyll>
+        </sensor>
+        <sensor
+          element_id="base_link"
+          action="add"
+          name="current_sensor"
+          type="custom"
+          gz:type="current">
+          <!-- <always_on>1</always_on>
+          <update_rate>2</update_rate> -->
+          <always_on>false</always_on>
+          <update_rate>0</update_rate>
+          <visualize>false</visualize>
+          <topic>/model/tethys/current</topic>
+          <gz:current>
+            <noise type="gaussian">
+              <mean>0.00001</mean>
+              <stddev>0.00001</stddev>
+            </noise>
+          </gz:current>
+        </sensor>
+        <!-- ________________________________________________________ -->
+        <!--
+            Teledyne Pathfinder DVL
+
+            See https://www.manualslib.com/manual/1447288/Teledyne-Pathfinder.html
+            for further reference.
+        -->
+        <!-- ________________________________________________________ -->
+        <sensor
+            element_id="base_link" action="add"
+            name="teledyne_pathfinder_dvl"
+            type="custom" gz:type="dvl">
+          <!-- ________________________________________________________ -->
+          <!-- Account for DVL mounting position and base link rotation -->
+          <!-- ________________________________________________________ -->
+          <pose degrees="true">-0.60 0 -0.16 0 0 180</pose>
+          <!-- <always_on>1</always_on>
+          <update_rate>1</update_rate> -->
+          <always_on>false</always_on>
+          <update_rate>0</update_rate>
+          <visualize>false</visualize>
+          <topic>/tethys/dvl/velocity</topic>
+          <gz:dvl>
+            <type>phased_array</type>
+            <arrangement degrees="true">
+              <beam id="1">
+                <aperture>2.1</aperture>
+                <rotation>45</rotation>
+                <tilt>30</tilt>
+              </beam>
+              <beam>
+                <aperture>2.1</aperture>
+                <rotation>135</rotation>
+                <tilt>30</tilt>
+              </beam>
+              <beam>
+                <aperture>2.1</aperture>
+                <rotation>-45</rotation>
+                <tilt>30</tilt>
+              </beam>
+              <beam>
+                <aperture>2.1</aperture>
+                <rotation>-135</rotation>
+                <tilt>30</tilt>
+              </beam>
+            </arrangement>
+            <tracking>
+              <bottom_mode>
+                <when>best</when>
+                <noise type="gaussian">
+                  <!-- ________________________________________________________ -->
+                  <!-- +/- 0.4 cm/s precision at 10 m/s within 2 stddevs -->
+                  <!-- ________________________________________________________ -->
+                  <stddev>0.002</stddev>
+                </noise>
+                <visualize>false</visualize>
+              </bottom_mode>
+              <water_mass_mode>
+                <when>best</when>
+                <water_velocity>
+                  <x>eastward_sea_water_velocity_meter_per_sec</x>
+                  <y>northward_sea_water_velocity_meter_per_sec</y>
+                </water_velocity>
+                <boundaries>
+                  <near>20.</near>
+                  <far>60.</far>
+                </boundaries>
+                <bins>10</bins>
+                <noise type="gaussian">
+                  <!-- ________________________________________________________ -->
+                  <!-- +/- 0.7 cm/s precision at 10 m/s within 2 stddevs -->
+                  <!-- ________________________________________________________ -->
+                  <stddev>0.0035</stddev>
+                </noise>
+                <visualize>false</visualize>
+              </water_mass_mode>
+            </tracking>
+            <!-- ________________________________________________________ -->
+            <!-- Roughly 1 m resolution at a 100m -->
+            <!-- ________________________________________________________ -->
+            <resolution>0.01</resolution>
+            <!-- ________________________________________________________ -->
+            <!-- Approximate maximum range @ ~14.4v -->
+            <!-- ________________________________________________________ -->
+            <maximum_range>80.</maximum_range>
+            <minimum_range>0.1</minimum_range>
+            <!-- ________________________________________________________ -->
+            <!-- ENU to SFM -->
+            <!-- ________________________________________________________ -->
+            <reference_frame>0 0 0 0 0 -1.570796</reference_frame>
+          </gz:dvl>
+        </sensor>
+        <!-- ________________________________________________________ -->
+        <!--
+            Sparton AHRS-M2 arrangement of IMU + Magnetometer
+
+            See https://www.spartonnavex.com/product/ahrs-m2 for
+            AHRS specifications and additional documentation.
+        -->
+        <!-- ________________________________________________________ -->
+        <sensor
+            element_id="base_link"
+            action="add"
+            name="sparton_ahrs_m2_imu"
+            type="imu">
+          <!--IMU in a Sparton AHRS-M2 -->
+          <always_on>1</always_on>
+          <!-- Flip body frame to match FSK frame convention -->
+          <!--
+            Also account for model being rotated 180 degrees
+            See https://github.com/osrf/lrauv/issues/80.
+          -->
+          <pose degrees="true">0 0 0 180 0 180</pose>
+          <imu>
+            <orientation_reference_frame>
+              <localization>NED</localization>
+            </orientation_reference_frame>
+            <enable_orientation>1</enable_orientation>
+            <linear_acceleration>
+              <!--
+                Use zero-mean gaussian distributions for each
+                linear acceleration component and its (turn on)
+                bias.
+
+                Standard deviation is assumed to be the same for all
+                linear acceleration components. It is computed from
+                reported noise density ND = 250 ug/√Hz and chosen
+                sample rate SR = 10 Hz as ND √SR.
+
+                Standard deviation is assumed to be the same for all
+                linear acceleration component (turn on) biases. It is
+                made equal to the reported bias stability BS = 0.07441 mg.
+              -->
+              <x>
+                <noise type="gaussian">
+                  <stddev>0.00775283755402256</stddev>
+                  <bias_stddev>0.007297128265</bias_stddev>
+                </noise>
+              </x>
+              <y>
+                <noise type="gaussian">
+                  <stddev>0.00775283755402256</stddev>
+                  <bias_stddev>0.007297128265</bias_stddev>
+                </noise>
+              </y>
+              <z>
+                <noise type="gaussian">
+                  <stddev>0.00775283755402256</stddev>
+                  <bias_stddev>0.007297128265</bias_stddev>
+                </noise>
+              </z>
+            </linear_acceleration>
+            <angular_velocity>
+              <!--
+                Use zero-mean gaussian distributions for each
+                angular velocity component and its (turn on)
+                bias.
+
+                Standard deviation is assumed to be the same for all
+                angular velocity components. It is computed from
+                reported noise density ND = 0.04 °/s/√Hz and chosen
+                sample rate SR = 10 Hz as ND √SR.
+
+                Standard deviation is assumed to be the same for all
+                angular velocity component (turn on) biases. It is made
+                equal to the reported bias stability BS = 6.415 °/hr.
+              -->
+              <x>
+                <noise type="gaussian">
+                  <stddev>0.0022076862812880228</stddev>
+                  <bias_stddev>0.0017819444444444445</bias_stddev>
+                </noise>
+              </x>
+              <y>
+                <noise type="gaussian">
+                  <stddev>0.0022076862812880228</stddev>
+                  <bias_stddev>0.0017819444444444445</bias_stddev>
+                </noise>
+              </y>
+              <z>
+                <noise type="gaussian">
+                  <stddev>0.0022076862812880228</stddev>
+                  <bias_stddev>0.0017819444444444445</bias_stddev>
+                </noise>
+              </z>
+            </angular_velocity>
+          </imu>
+          <update_rate>10</update_rate>
+          <topic>/tethys/ahrs/imu</topic>
+        </sensor>
+        <!--Magnetometer in a Sparton AHRS-M2 -->
+        <sensor
+            element_id="base_link"
+            action="add"
+            name="sparton_ahrs_m2_magnetometer"
+            type="magnetometer">
+          <always_on>1</always_on>
+          <update_rate>10</update_rate>
+          <!-- Flip body frame to match FSK frame convention -->
+          <!--
+            Also account for model being rotated 180 degrees
+            See https://github.com/osrf/lrauv/issues/80.
+          -->
+          <pose degrees="true">0 0 0 180 0 180</pose>
+          <topic>/tethys/ahrs/magnetometer</topic>
+        </sensor>
+      </experimental:params>
+      <!-- Joint controllers -->
+      <plugin
+        filename="gz-sim-joint-position-controller-system"
+        name="gz::sim::systems::JointPositionController">
+        <joint_name>horizontal_fins_joint</joint_name>
+        <p_gain>0.1</p_gain>
+      </plugin>
+      <plugin
+        filename="gz-sim-joint-position-controller-system"
+        name="gz::sim::systems::JointPositionController">
+        <joint_name>vertical_fins_joint</joint_name>
+        <p_gain>0.1</p_gain>
+      </plugin>
+      <plugin
+        filename="gz-sim-thruster-system"
+        name="gz::sim::systems::Thruster">
+        <namespace>tethys</namespace>
+        <joint_name>propeller_joint</joint_name>
+        <!-- Be sure to update TethysComm when updating these numbers -->
+        <thrust_coefficient>0.004312328425753156</thrust_coefficient>
+        <fluid_density>1025</fluid_density>
+        <propeller_diameter>0.2</propeller_diameter>
+        <velocity_control>true</velocity_control>
+        <use_angvel_cmd>true</use_angvel_cmd>
+      </plugin>
+      <plugin
+        filename="gz-sim-joint-position-controller-system"
+        name="gz::sim::systems::JointPositionController">
+        <joint_name>battery_joint</joint_name>
+        <use_velocity_commands>true</use_velocity_commands>
+        <cmd_max>0.0007</cmd_max>
+      </plugin>
+      <!-- Lift and drag -->
+      <!-- Vertical fin -->
+      <plugin
+        filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+        <air_density>1025</air_density>
+        <cla>4.13</cla>
+        <cla_stall>-1.1</cla_stall>
+        <cda>0.2</cda>
+        <cda_stall>0.03</cda_stall>
+        <alpha_stall>0.17</alpha_stall>
+        <a0>0</a0>
+        <area>0.0244</area>
+        <!-- Link's Y is perpendicular to the control surface -->
+        <upward>0 1 0</upward>
+        <!-- Link's X is pointing towards the back -->
+        <forward>-1 0 0</forward>
+        <link_name>vertical_fins</link_name>
+        <cp>0 0 0</cp>
+      </plugin>
+      <!-- Horizontal fin -->
+      <plugin
+        filename="gz-sim-lift-drag-system"
+        name="gz::sim::systems::LiftDrag">
+        <air_density>1025</air_density>
+        <cla>4.13</cla>
+        <cla_stall>-1.1</cla_stall>
+        <cda>0.2</cda>
+        <cda_stall>0.03</cda_stall>
+        <alpha_stall>0.17</alpha_stall>
+        <a0>0</a0>
+        <area>0.0244</area>
+        <!-- Link's Z is perpendicular to the control surface -->
+        <upward>0 0 1</upward>
+        <!-- Link's X is pointing towards the back -->
+        <forward>-1 0 0</forward>
+        <link_name>horizontal_fins</link_name>
+        <cp>0 0 0</cp>
+      </plugin>
+      <!-- Interface with LRAUV Main Vehicle Application for each vehicle -->
+      <plugin
+        filename="TethysCommPlugin"
+        name="tethys::TethysCommPlugin">
+        <namespace>tethys</namespace>
+        <command_topic>tethys/command_topic</command_topic>
+        <state_topic>tethys/state_topic</state_topic>
+        <debug_printout>0</debug_printout>
+        <ocean_density>1025</ocean_density>
+      </plugin>
+      <plugin
+        filename="HydrodynamicsPlugin"
+        name="tethys::HydrodynamicsPlugin">
+        <link_name>base_link</link_name>
+        <enable_coriolis>false</enable_coriolis>
+        <!-- Add this line to simulate a water current -->
+  	<!--<default_current>0.5 0.2 0</default_current> -->
+        <xDotU>-4.876161</xDotU>
+        <yDotV>-126.324739</yDotV>
+        <zDotW>-126.324739</zDotW>
+        <kDotP>0</kDotP>
+        <mDotQ>-33.46</mDotQ>
+        <nDotR>-33.46</nDotR>
+        <xUU>-6.2282</xUU>
+        <xU>0</xU>
+        <yVV>-601.27</yVV>
+        <yV>0</yV>
+        <zWW>-601.27</zWW>
+        <zW>0</zW>
+        <kPP>-0.1916</kPP>
+        <kP>0</kP>
+        <mQQ>-632.698957</mQQ>
+        <mQ>0</mQ>
+        <nRR>-632.698957</nRR>
+        <nR>0</nR>
+      </plugin>
+      <plugin
+        filename="gz-sim-buoyancy-engine-system"
+        name="gz::sim::systems::BuoyancyEngine">
+        <link_name>buoyancy_engine</link_name>
+        <namespace>tethys</namespace>
+        <fluid_density>1025</fluid_density>
+        <!-- 80 cc == 0.00008 m^3 -->
+        <min_volume>0.000080</min_volume>
+        <!-- 500 cc == 0.0005 m^3 -->
+        <neutral_volume>0.0005</neutral_volume>
+        <default_volume>0.0005</default_volume>
+        <!-- 955 cc == 0.000955 m^3 -->
+        <max_volume>0.000955</max_volume>
+        <!-- m^3/s -->
+        <max_inflation_rate>0.000003</max_inflation_rate>
+      </plugin>
+      <plugin
+        filename="gz-sim-detachable-joint-system"
+        name="gz::sim::systems::DetachableJoint">
+        <parent_link>base_link</parent_link>
+        <child_model>__model__</child_model>
+        <child_link>drop_weight</child_link>
+        <topic>/model/tethys/drop_weight</topic>
+      </plugin>
+
+      <plugin
+        filename="gz-sim-comms-endpoint-system"
+        name="gz::sim::systems::CommsEndpoint">
+        <address>1</address>
+        <topic>1/rx</topic>
+      </plugin>
+
+      <plugin
+        filename="RangeBearingPlugin"
+        name="tethys::RangeBearingPlugin">
+        <address>1</address>
+        <processing_delay>0.3</processing_delay>
+        <speed_of_sound>1500</speed_of_sound>
+        <link_name>acoustic_transponder</link_name>
+        <namespace>tethys</namespace>
+      </plugin>
+
+      <!-- The consists of 62 batteries of NH2034HD34 Lithium Ion batteries. -->
+      <!-- Datasheet: https://github.com/osrf/lrauv/files/8614587/NH2034HD34_spec_v1.5.pdf -->
+      <!-- Reference comment : https://github.com/osrf/lrauv/issues/201#issuecomment-1116729239 -->
+      <plugin filename="gz-sim-linearbatteryplugin-system"
+        name="gz::sim::systems::LinearBatteryPlugin">
+        <battery_name>linear_battery</battery_name>
+        <voltage>14.4</voltage>
+        <open_circuit_voltage_constant_coef>14.4</open_circuit_voltage_constant_coef>
+        <fix_issue_225>true</fix_issue_225>
+        <!-- Initial charge in Ah -->
+        <initial_charge>400</initial_charge>
+        <capacity>400</capacity>
+        <!-- 190mOhm / 62 -->
+        <resistance>0.003064</resistance>
+        <!-- Power consumption in Watts: 14.4V * 2 A -->
+        <power_load>28.8</power_load>
+        <!-- Recharging the battery -->
+        <!-- Avg discharge current = (max + min) / 2 -->
+        <!--  = (15 + 4) / 2 = 9.5 A -->
+        <!-- Charging time: 400 Ah/( 9.5 A ) = 42.1 h -->
+        <enable_recharge>true</enable_recharge>
+        <recharge_by_topic>true</recharge_by_topic>
+        <charging_time>42.1</charging_time>
+      </plugin>
+
+    </include>
+  </model>
+</sdf>

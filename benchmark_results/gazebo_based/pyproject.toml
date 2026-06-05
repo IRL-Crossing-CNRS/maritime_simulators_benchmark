@@ -1,0 +1,83 @@
+[project]
+name = "benchmark-results"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    {name = "IRL Crossing"}
+]
+requires-python = ">=3.10"
+dependencies = [
+    "black>=25.9.0",
+    "licenseheaders>=0.8.8",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "scipy",
+]
+
+[build-system]
+requires = ["uv_build>=0.8.22,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.13.2",
+]
+
+[tool.setuptools-git-versioning]
+enabled = true
+
+# --------------------------
+# Ruff configuration
+# --------------------------
+[tool.ruff]
+# Allow lines to be as long as 120 characters.
+line-length = 120
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore unused imports in __init__.py (common for re-exports)
+"*/__init__.py" = ["F401"]
+
+# --------------------------
+# Black configuration
+# --------------------------
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+# --------------------------
+# PyLint configuration
+# --------------------------
+[tool.pylint."MAIN"]
+fail-under = 8.0
+fail-on = [
+    "F",
+    "E",
+    "unused-import"
+]
+max-line-length = 120
+disable = [
+    "missing-docstring"
+]
+
+# --------------------------
+# PyCodeStyle configuration
+# --------------------------
+[pycodestyle]
+max-line-length = 120
+
+# --------------------------
+# Pydocstyle configuration
+# --------------------------
+[tool.pydocstyle]
+max-line-length = 120

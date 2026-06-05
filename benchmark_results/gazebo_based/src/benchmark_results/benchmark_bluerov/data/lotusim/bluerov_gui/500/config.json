@@ -1,0 +1,16 @@
+{
+    "world_file": "worldExample.world",
+    "agent_counts": {
+        "Bluerov": 500
+    },
+    "agent_poses": {},
+    "agent_models": {
+        "Bluerov": "model-without-sensors.sdf"
+    },
+    "visu_gazebo": true,
+    "bridge_sensors": false,
+    "renderer_unity": false,
+    "max_simulation_time": 600,
+    "nb_simulations": 1,
+    "yml_path": "bluerov/BlueROV2.yml"
+}

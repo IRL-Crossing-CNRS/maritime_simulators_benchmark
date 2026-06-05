@@ -1,0 +1,20 @@
+{
+    "world_file": "worldExample.world",
+    "agent_counts": {
+        "Lrauv": [
+            360,
+            400
+        ],
+        "Bluerov": 16
+    },
+    "agent_poses": {},
+    "agent_models": {
+        "Lrauv": "model.sdf"
+    },
+    "visu_gazebo": true,
+    "bridge_sensors": true,
+    "renderer_unity": false,
+    "max_simulation_time": 200,
+    "nb_simulations": 1,
+    "yml_path": "bluerov/BlueROV2.yml"
+}

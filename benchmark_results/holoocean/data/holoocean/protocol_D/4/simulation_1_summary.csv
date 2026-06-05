@@ -1,0 +1,11 @@
+Metric,Mean,Median,Standard Deviation,Variance,Min,Max,Skewness,Kurtosis
+release_latency_ms  [MEASURED]   sem_wait duration,1.8795,1.9193,0.4237,0.1795,0.8283,5.6259,0.1943,1.5023
+current_inject_ms   [MEASURED]   set_ocean_currents() wall time,0.0647,0.0656,0.0165,0.0003,0.0232,0.1973,0.2874,1.4197
+step_ms             [MEASURED]   release_latency + current_injection,1.9441,1.9898,0.4348,0.189,0.8633,5.7072,0.1541,1.3003
+full_frame_ms       [CALCULATED] time between Release() calls,29.8476,30.0788,2.2885,5.2373,19.0694,64.8788,0.4626,15.5058
+post_release_ms     [CALCULATED] full_frame - release_latency,27.9681,28.1707,2.0686,4.2789,17.9887,63.5711,0.8909,24.852
+RTF                 [CALCULATED] (ticks*dt_s)/total_compute_s,1.0162,1.0162,0.0,0.0,1.0162,1.0162,nan,nan
+tick_rate_hz        [CALCULATED] ticks/wall_elapsed,33.5337,33.5337,0.0,0.0,33.5337,33.5337,nan,nan
+render_fps_est      [CALCULATED] 1000/full_frame_ms lower bound,0,0,0,0,0,0,0,0
+cpu_pct             [MEASURED],3.5875,3.4,0.9787,0.9579,1.0,18.7,1.2419,13.282
+gpu_pct             [MEASURED],3.9418,2.0,7.3192,53.5712,1.0,100.0,8.9252,107.7523

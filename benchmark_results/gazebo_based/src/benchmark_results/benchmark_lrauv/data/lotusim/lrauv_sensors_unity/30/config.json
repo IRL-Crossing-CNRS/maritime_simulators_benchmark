@@ -1,0 +1,16 @@
+{
+    "world_file": "worldExample.world",
+    "agent_counts": {
+        "Lrauv": 30
+    },
+    "agent_poses": {},
+    "agent_models": {
+        "Lrauv": "model.sdf"
+    },
+    "visu_gazebo": false,
+    "bridge_sensors": true,
+    "renderer_unity": true,
+    "max_simulation_time": 600,
+    "nb_simulations": 1,
+    "yml_path": "lrauv/lrauv-ekman.yml"
+}

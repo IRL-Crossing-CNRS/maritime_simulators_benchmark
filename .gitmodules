@@ -1,0 +1,12 @@
+[submodule "benchmark_code/lrauvsim_benchmark/lrauv_ws/src/lrauv"]
+	path = benchmark_code/lrauvsim_benchmark/lrauv_ws/src/lrauv
+	url = https://github.com/osrf/lrauv
+[submodule "benchmark_code/uuv_benchmark/uuv_ws/catkin_ws/src/gazebo_ros_pkgs"]
+	path = benchmark_code/uuv_benchmark/uuv_ws/catkin_ws/src/gazebo_ros_pkgs
+	url = https://github.com/ros-simulation/gazebo_ros_pkgs.git
+[submodule "benchmark_code/uuv_benchmark/uuv_ws/catkin_ws/src/uuv_simulator"]
+	path = benchmark_code/uuv_benchmark/uuv_ws/catkin_ws/src/uuv_simulator
+	url = https://github.com/uuvsimulator/uuv_simulator.git
+[submodule "benchmark_code/uuv_benchmark/uuv_ws/catkin_ws/src/bluerov2"]
+	path = benchmark_code/uuv_benchmark/uuv_ws/catkin_ws/src/bluerov2
+	url = https://github.com/UUVControl/bluerov2

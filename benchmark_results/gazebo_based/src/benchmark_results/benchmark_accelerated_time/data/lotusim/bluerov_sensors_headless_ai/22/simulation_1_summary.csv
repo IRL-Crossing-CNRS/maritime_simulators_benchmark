@@ -1,0 +1,9 @@
+Metric,Mean,Median,Standard Deviation,Variance,Min,Max,Skewness,Kurtosis
+Preparation Update (ms),0.0,0.0,0.0,0.0,0.0,0.0,,
+Pre-Update (ms),494.27,494.27,0.0,0.0,494.27,494.27,1.0,-2.0
+Update (ms),0.0,0.0,0.0,0.0,0.0,0.0,,
+Post-Update (ms),0.0,0.0,0.0,0.0,0.0,0.0,,
+Execution time (ms),494.27,494.27,0.0,0.0,494.27,494.27,1.0,-2.0
+Real Time Factor (%),1.73,1.73,0.0,0.0,1.73,1.73,,
+CPU usage (%),0.33,0.3,0.2,0.04,0.0,1.6,0.32,0.71
+GPU usage (%),0.31,0.0,1.97,3.87,0.0,14.0,6.43,39.93
