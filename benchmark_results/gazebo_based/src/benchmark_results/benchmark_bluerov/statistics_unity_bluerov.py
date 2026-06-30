@@ -221,10 +221,10 @@ def plot_update_comparison(df_uuv, df_lotus):
                 annotation_clip=False)
 
     # LOTUSim user perception limit vertical line (~200 ms by dichotomy)
-    ax.vlines(420, 0, USER_PERCEPTION_LIMIT, color="red", linestyle=":", linewidth=1.0)
+    ax.vlines(420, 0, USER_PERCEPTION_LIMIT, color="teal", linestyle=":", linewidth=1.0)
     ax.annotate("420", xy=(420, 0), xycoords=("data", "axes fraction"),
                 xytext=(0, -14), textcoords="offset points",
-                ha="center", va="top", fontsize=7.5, color="red",
+                ha="center", va="top", fontsize=7.5, color="teal",
                 annotation_clip=False)
 
     # UUVSim crash zone: grey band from 150 to 162 (UUVSim only)
