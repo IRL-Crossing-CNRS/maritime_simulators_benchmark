@@ -1,0 +1,2 @@
+protocol,n,tps,dt_ms,rendering,mean_release_latency_ms,std_release_latency_ms,max_release_latency_ms,wall_elapsed_s,ticks_done,mean_cpu_pct,mean_gpu_pct,full_frame_ms,post_release_work_ms,RTF,tick_rate_hz,render_fps_estimate,sim_time_s,rtf_above_1,tick_rate_above_140hz,full_frame_below_30ms,full_frame_below_200ms
+D,1,33,30.303,False,1.5632,0.322,3.6316,290.01,9900,3.3,2.14,29.2941,27.7309,1.0345,34.1366,,300,True,False,True,True

@@ -7,12 +7,15 @@ This folder contains the benchmark results for [HoloOcean](https://holoocean.rea
 ```text
 holoocean/
 ├── data/
-│   └── holoocean/
-│       ├── protocol_A/    # Real-time HITL — 41 agent counts tested (5 to 3205)
-│       ├── protocol_B/    # Autonomous control — 14 agent counts tested (1 to 20)
-│       └── protocol_D/    # Headless AI training — 12 agent counts tested (1 to 12)
+│   ├── holoocean/
+│   │   ├── protocol_A/    # Real-time HITL — 41 agent counts tested (5 to 3205)
+│   │   ├── protocol_B/    # Autonomous control — 14 agent counts tested (1 to 20)
+│   │   └── protocol_D/    # Headless AI training — 12 agent counts tested (1 to 12)
+│   └── holoocean_repeats/ # Five repeated runs at the limits (see its README)
+├── process_holoocean_repeats.py      # Statistics over the repeated runs
 ├── results/
-│   └── benchmark_all_protocols.csv   # Aggregated summary across all protocols
+│   ├── benchmark_all_protocols.csv   # Aggregated summary across all protocols
+│   └── holoocean_repeats_*.csv       # Per-run and summary statistics of the repeated runs
 └── figures/
     ├── holoocean_protocol_A.eps / .pdf / .png
     ├── holoocean_protocol_B.eps / .pdf / .png
