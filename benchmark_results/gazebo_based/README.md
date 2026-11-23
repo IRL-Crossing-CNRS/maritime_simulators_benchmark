@@ -21,6 +21,7 @@ gazebo_based/
 - `data/` — raw input CSV files from benchmark runs
   - `data/lotusim/<config>/` — LOTUSim per-agent raw metrics; the folder name matches the JSON config filename used at run time (without `.json`)
   - `data/lrauvsim/` — LRAUVSim per-agent raw CSVs (`real_update.csv`, `rtf.csv`, `render_fps.csv`)
+  - `data/lrauvsim_repeats/<n_agents>/run<k>/` (in `benchmark_lrauv/`) — five repeated LRAUVSim runs at 115 and 120 agents, summarised by `process_lrauvsim_repeats.py` into `results/lrauvsim_repeats_*.csv`
   - `data/uuv/AB/` — UUVSim per-agent raw CSVs (`update_times.csv`, `benchmark_rtf.csv`, `render_fps.csv`)
   - `data/LRAUVSim_results.csv` / `data/UUVSim_results.csv` — pre-processed summary CSVs (auto-generated)
 - `results/` — generated summary CSVs and plots (EPS, PDF, and PNG)
