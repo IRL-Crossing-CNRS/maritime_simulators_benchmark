@@ -1,0 +1,17 @@
+date: 2026-11-23T10:44:56+10:30
+n_agents: 120
+run: 1
+target_simtime_s: 330
+world_sha256: dd9f6060d677cc5e58bab034f11c447674257b4bc44a9afb59602b902d05b84e
+gpu: NVIDIA GeForce RTX 4090 Laptop GPU, 570.133.07, P5, 48
+online: non
+window: taille d'ouverture par défaut, pas de plein écran
+capture: 0  (1 = abonnés gz topic pendant le run -> run NON comptable)
+stat_window: 0 < SimTime <= 330 s
+ac_power: 1  battery: 47% Charging
+platform_profile: balanced  governor: powersave
+uptime:  10:44:56 up  1:22,  1 user,  load average: 2.64, 2.74, 1.76
+free -m:
+              total       utilisé      libre     partagé tamp/cache   disponible
+Mem:          63909        2042       55757           6        6109       61146
+Partition d'échange:        2047           0        2047

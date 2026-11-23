@@ -1,0 +1,1711 @@
+header {
+  stamp {
+    sec: 11
+    nsec: 370000000
+  }
+}
+pose {
+  name: "horizontal_plane"
+  id: 4
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "tethys"
+  id: 9
+  position {
+    x: 0.71961534008994876
+    y: -1.0737272317375404e-15
+    z: -7.9110095582140208e-13
+  }
+  orientation {
+    x: -1.1932010058780166e-13
+    y: 1.1932821733963155e-13
+    z: 0.70710678118654735
+    w: -0.70710678118654768
+  }
+}
+pose {
+  name: "tethys1"
+  id: 45
+  position {
+    x: -228.06382878332107
+    y: 55.699049087741031
+    z: -0.40433591397322172
+  }
+  orientation {
+    x: -6.81972182846577e-13
+    y: 6.8197218386010685e-13
+    z: 0.70710678118654735
+    w: -0.70710678118654768
+  }
+}
+pose {
+  name: "tethys2"
+  id: 79
+  position {
+    x: 65.318229937905528
+    y: -445.65007419862803
+    z: -1.7621236952023751
+  }
+  orientation {
+    x: 0.00559432634802262
+    y: -0.005594315636015524
+    z: 0.70708464851177943
+    w: -0.70708465333667758
+  }
+}
+pose {
+  name: "tethys3"
+  id: 113
+  position {
+    x: -110.88742558115459
+    y: 233.96400589077717
+    z: -2.0052615997437115
+  }
+  orientation {
+    x: -1.4972074934709517e-13
+    y: 1.4972075022750905e-13
+    z: 0.70710678118654735
+    w: -0.70710678118654768
+  }
+}
+pose {
+  name: "tethys4"
+  id: 147
+  position {
+    x: -102.32331512562622
+    y: 512.49519209595485
+    z: -1.80502775184729
+  }
+  orientation {
+    x: 0.0052472399650256608
+    y: -0.0052472281226728116
+    z: 0.70708730939416076
+    w: -0.70708731424308857
+  }
+}
+pose {
+  name: "tethys5"
+  id: 181
+  position {
+    x: -99.72735285202377
+    y: 256.24683364474686
+    z: -0.4059321382327899
+  }
+  orientation {
+    x: -1.4972074934709517e-13
+    y: 1.4972075022750905e-13
+    z: 0.70710678118654735
+    w: -0.70710678118654768
+  }
+}
+pose {
+  name: "tethys6"
+  id: 215
+  position {
+    x: 5.4161620771524479
+    y: 167.11845496610036
+    z: -1.4916819937302233
+  }
+  orientation {
+    x: 0.0073918635671968574
+    y: -0.0073918598846717679
+    z: 0.70706814175484911
+    w: -0.70706814641574267
+  }
+}
+pose {
+  name: "tethys7"
+  id: 249
+  position {
+    x: 22.586243934510158
+    y: -33.423761787435424
+    z: -1.3860942012995112
+  }
+  orientation {
+    x: 0.0075607915037276385
+    y: -0.00756078997579683
+    z: 0.70706635580716293
+    w: -0.70706635994958611
+  }
+}
+pose {
+  name: "tethys8"
+  id: 283
+  position {
+    x: 123.46397192766011
+    y: -467.93346773835083
+    z: -4.51832884440609
+  }
+  orientation {
+    x: -1.4972074934709517e-13
+    y: 1.4972075022750905e-13
+    z: 0.70710678118654735
+    w: -0.70710678118654768
+  }
+}
+pose {
+  name: "tethys9"
+  id: 317
+  position {
+    x: -27.182735588355587
+    y: 311.95414962097874
+    z: -1.7076833519297803
+  }
+  orientation {
+    x: -1.8303298345216498e-13
+    y: 1.83032984340974e-13
+    z: 0.70710678118654735
+    w: -0.70710678118654768
+  }
+}
+pose {
+  name: "link"
+  id: 5
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "base_link"
+  id: 10
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 20
+  position {
+    x: -5.5511151231257827e-17
+    y: -1.05
+  }
+  orientation {
+    x: -4.1853826073810043e-17
+    y: -4.1853826073840636e-17
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 23
+  position {
+    x: -5.5511151231257827e-17
+    y: -1.05
+  }
+  orientation {
+    x: 5.3402185497969276e-30
+    y: -2.5243548967072378e-29
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "propeller"
+  id: 26
+  position {
+    x: -1.6653345369377348e-16
+    y: -1.4316200000000001
+  }
+  orientation {
+    x: -2.7577313836483055e-28
+    y: 2.5243548967072378e-28
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "battery"
+  id: 29
+  position {
+    y: -7.3274719625260332e-15
+  }
+  orientation {
+    x: 5.3386778058414178e-30
+    y: -2.5243548967072378e-29
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 31
+  position {
+    x: -1.1102230246251565e-16
+    y: -0.137
+  }
+  orientation {
+    x: 5.3386778058414178e-30
+    y: -2.5243548967072378e-29
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 33
+  position {
+  }
+  orientation {
+    x: 2.5243548967072378e-29
+    y: -1.967530031186e-30
+    z: -0.70710678118654746
+    w: -0.70710678118654757
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 35
+  position {
+    x: -1.1102230246251565e-16
+    y: -0.12800000000000011
+  }
+  orientation {
+    x: 5.3386778058414178e-30
+    y: -2.5243548967072378e-29
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "base_link"
+  id: 46
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 56
+  position {
+    x: -1.4210854715202004e-14
+    y: -1.0500000000000398
+  }
+  orientation {
+    x: -1.5226965842374526e-15
+    y: -1.5226965842374514e-15
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 59
+  position {
+    x: -1.4210854715202004e-14
+    y: -1.0500000000000398
+  }
+  orientation {
+    x: -1.5891738525659266e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "propeller"
+  id: 62
+  position {
+    x: -5.6843418860808015e-14
+    y: -1.4316200000000094
+  }
+  orientation {
+    x: 3.706853350685284e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "battery"
+  id: 65
+  position {
+    x: -5.6843418860808015e-14
+  }
+  orientation {
+    x: -1.5899502430747577e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 67
+  position {
+    x: -2.8421709430404007e-14
+    y: -0.13700000000000045
+  }
+  orientation {
+    x: -1.5899502430747577e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 69
+  position {
+    x: -5.6843418860808015e-14
+  }
+  orientation {
+    x: 1.0097419586828951e-28
+    y: 5.7625493044004716e-29
+    z: -0.70710678118654746
+    w: -0.70710678118654757
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 71
+  position {
+    x: -4.2632564145606011e-14
+    y: -0.1279999999999859
+  }
+  orientation {
+    x: -1.5899502430747577e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "base_link"
+  id: 80
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 90
+  position {
+    y: -1.0500000000000114
+    z: 2.2204460492503131e-16
+  }
+  orientation {
+    x: -5.6038236603474185e-06
+    y: -5.60382366034725e-06
+    z: -0.70710678116434222
+    w: 0.70710678116434245
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 93
+  position {
+    y: -1.0500000000000114
+    z: 2.2204460492503131e-16
+  }
+  orientation {
+    x: 5.218517048474541e-20
+    z: -0.70710678111715353
+    w: 0.70710678125594162
+  }
+}
+pose {
+  name: "propeller"
+  id: 96
+  position {
+    x: 5.6843418860808015e-14
+    y: -1.4316199999998673
+    z: 6.6613381477509392e-16
+  }
+  orientation {
+    x: -1.9648709928763073e-14
+    y: 1.9650080174127282e-14
+    z: -0.70710678118654735
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "battery"
+  id: 99
+  position {
+    y: 1.7053025658242404e-13
+  }
+  orientation {
+    x: 3.1771841892039282e-19
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 101
+  position {
+    x: 5.6843418860808015e-14
+    y: -0.13699999999994361
+    z: 2.2204460492503131e-16
+  }
+  orientation {
+    x: 3.1771841892039282e-19
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 103
+  position {
+  }
+  orientation {
+    y: 6.60260528023502e-19
+    z: -0.70710678118654757
+    w: -0.70710678118654746
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 105
+  position {
+    y: -0.12799999999995748
+    z: 4.4408920985006262e-16
+  }
+  orientation {
+    x: 3.1771841892039282e-19
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "base_link"
+  id: 114
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 124
+  position {
+    y: -1.0499999999999972
+  }
+  orientation {
+    x: -4.6040495258506688e-17
+    y: -4.6040495258504359e-17
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 127
+  position {
+    y: -1.0499999999999972
+  }
+  orientation {
+    x: -2.3398707820349498e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "propeller"
+  id: 130
+  position {
+    y: -1.4316199999999952
+  }
+  orientation {
+    x: 6.9567297930251254e-31
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "battery"
+  id: 133
+  position {
+  }
+  orientation {
+    x: -2.3398777409615066e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 135
+  position {
+    y: -0.13700000000000045
+  }
+  orientation {
+    x: -2.3398777409615066e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 137
+  position {
+    y: 1.4210854715202004e-14
+  }
+  orientation {
+    x: 2.5243548967072378e-29
+    y: 1.3735919313991321e-29
+    z: -0.70710678118654746
+    w: -0.70710678118654757
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 139
+  position {
+    y: -0.12800000000001432
+  }
+  orientation {
+    x: -2.3398777409615066e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "base_link"
+  id: 148
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 158
+  position {
+    y: -1.0499999999998977
+  }
+  orientation {
+    x: -5.6387203180640273e-06
+    y: -5.6387203180626594e-06
+    z: -0.70710678116406489
+    w: 0.707106781164065
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 161
+  position {
+    y: -1.0499999999998977
+  }
+  orientation {
+    x: -1.0411482487827319e-18
+    y: 8.6736173798840355e-19
+    z: -0.7071067811090771
+    w: 0.70710678126401794
+  }
+}
+pose {
+  name: "propeller"
+  id: 164
+  position {
+    y: -1.4316199999998673
+    z: 1.7763568394002505e-15
+  }
+  orientation {
+    x: -2.0760331565257185e-14
+    y: 2.0760303198752439e-14
+    z: -0.70710678118654746
+    w: 0.70710678118654768
+  }
+}
+pose {
+  name: "battery"
+  id: 167
+  position {
+    y: 2.5579538487363607e-13
+    z: 8.8817841970012523e-16
+  }
+  orientation {
+    x: -6.9004895624276164e-19
+    y: 8.6736173798840355e-19
+    z: -0.70710678118654746
+    w: 0.70710678118654768
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 169
+  position {
+    y: -0.13699999999991519
+    z: 4.4408920985006262e-16
+  }
+  orientation {
+    x: -6.9004895624276164e-19
+    y: 8.6736173798840355e-19
+    z: -0.70710678118654746
+    w: 0.70710678118654768
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 171
+  position {
+    y: 1.1368683772161603e-13
+    z: 4.4408920985006262e-16
+  }
+  orientation {
+    x: -8.6736173798840355e-19
+    y: -3.6875628989552718e-19
+    z: -0.70710678118654757
+    w: -0.70710678118654757
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 173
+  position {
+    y: -0.12799999999984379
+    z: 8.8817841970012523e-16
+  }
+  orientation {
+    x: -6.9004895624276164e-19
+    y: 8.6736173798840355e-19
+    z: -0.70710678118654746
+    w: 0.70710678118654768
+  }
+}
+pose {
+  name: "base_link"
+  id: 182
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 192
+  position {
+    x: 5.6843418860808015e-14
+    y: -1.0500000000000114
+  }
+  orientation {
+    x: -4.6040495258481445e-17
+    y: -4.6040495258479115e-17
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 195
+  position {
+    x: 5.6843418860808015e-14
+    y: -1.0500000000000114
+  }
+  orientation {
+    x: -2.3398708760744978e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "propeller"
+  id: 198
+  position {
+    y: -1.4316200000000379
+    z: 5.5511151231257827e-17
+  }
+  orientation {
+    x: 6.956727912234164e-31
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "battery"
+  id: 201
+  position {
+    x: 5.6843418860808015e-14
+    y: -4.2632564145606011e-14
+  }
+  orientation {
+    x: -2.3398778350010547e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 203
+  position {
+    y: -0.13700000000002888
+  }
+  orientation {
+    x: -2.3398778350010547e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 205
+  position {
+    x: 5.6843418860808015e-14
+    y: -4.2632564145606011e-14
+  }
+  orientation {
+    x: 2.5243548967072378e-29
+    y: 1.3735919219951773e-29
+    z: -0.70710678118654746
+    w: -0.70710678118654757
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 207
+  position {
+    x: 5.6843418860808015e-14
+    y: -0.12800000000002854
+    z: 1.1102230246251565e-16
+  }
+  orientation {
+    x: -2.3398778350010547e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "base_link"
+  id: 216
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 226
+  position {
+    y: -1.0499999999999687
+  }
+  orientation {
+    x: -5.287714319825842e-06
+    y: -5.2877143198260326e-06
+    z: -0.70710678116677694
+    w: 0.70710678116677694
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 229
+  position {
+    y: -1.0499999999999687
+  }
+  orientation {
+    x: -6.66726598871829e-19
+    z: -0.707106781162003
+    w: 0.70710678121109216
+  }
+}
+pose {
+  name: "propeller"
+  id: 232
+  position {
+    y: -1.431619999999981
+    z: -4.4408920985006262e-16
+  }
+  orientation {
+    x: -1.0817435918788404e-14
+    y: 1.0816000872715392e-14
+    z: -0.70710678118654746
+    w: 0.70710678118654768
+  }
+}
+pose {
+  name: "battery"
+  id: 235
+  position {
+    y: 2.4158453015843406e-13
+    z: -6.6613381477509392e-16
+  }
+  orientation {
+    x: -1.3577592796580694e-18
+    z: -0.70710678118654746
+    w: 0.70710678118654768
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 237
+  position {
+    x: 2.8421709430404007e-14
+    y: -0.13699999999997203
+    z: -4.4408920985006262e-16
+  }
+  orientation {
+    x: -1.3577592796580694e-18
+    z: -0.70710678118654746
+    w: 0.70710678118654768
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 239
+  position {
+    y: 1.4210854715202004e-14
+    z: -4.4408920985006262e-16
+  }
+  orientation {
+    x: 1.7347234759768071e-18
+    y: -9.051632715966175e-19
+    z: -0.70710678118654757
+    w: -0.70710678118654746
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 241
+  position {
+    y: -0.12799999999995748
+    z: -2.2204460492503131e-16
+  }
+  orientation {
+    x: -1.3577592796580694e-18
+    z: -0.70710678118654746
+    w: 0.70710678118654768
+  }
+}
+pose {
+  name: "base_link"
+  id: 250
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 260
+  position {
+    y: -1.0500000000000043
+    z: -4.4408920985006262e-16
+  }
+  orientation {
+    x: -4.5138647215457589e-06
+    y: -4.5138647215480984e-06
+    z: -0.70710678117214021
+    w: 0.70710678117214043
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 263
+  position {
+    y: -1.0500000000000043
+    z: -4.4408920985006262e-16
+  }
+  orientation {
+    x: 3.4115451362555148e-19
+    y: -8.6736173798840355e-19
+    z: -0.70710678117466808
+    w: 0.70710678119842718
+  }
+}
+pose {
+  name: "propeller"
+  id: 266
+  position {
+    y: -1.4316199999999988
+    z: -1.1102230246251565e-16
+  }
+  orientation {
+    x: -6.4603425642688544e-15
+    y: 6.4592428627996412e-15
+    z: -0.70710678118654757
+    w: 0.70710678118654779
+  }
+}
+pose {
+  name: "battery"
+  id: 269
+  position {
+    x: -7.1054273576010019e-15
+    y: 2.1671553440683056e-13
+    z: -3.3306690738754696e-16
+  }
+  orientation {
+    x: -1.8023024776611643e-20
+    y: -8.6736173798840355e-19
+    z: -0.70710678118654757
+    w: 0.70710678118654779
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 271
+  position {
+    y: -0.137000000000004
+  }
+  orientation {
+    x: -1.8023024776611643e-20
+    y: -8.6736173798840355e-19
+    z: -0.70710678118654757
+    w: 0.70710678118654779
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 273
+  position {
+    y: -3.5527136788005009e-15
+    z: -4.4408920985006262e-16
+  }
+  orientation {
+    x: 8.6736173798840355e-19
+    y: -4.2244630870965969e-19
+    z: -0.70710678118654768
+    w: -0.70710678118654768
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 275
+  position {
+    y: -0.12800000000000722
+    z: -2.2204460492503131e-16
+  }
+  orientation {
+    x: -1.8023024776611643e-20
+    y: -8.6736173798840355e-19
+    z: -0.70710678118654757
+    w: 0.70710678118654779
+  }
+}
+pose {
+  name: "base_link"
+  id: 284
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 294
+  position {
+    x: -1.7053025658242404e-13
+    y: -1.0500000000000114
+  }
+  orientation {
+    x: -4.6040495258506688e-17
+    y: -4.6040495258504359e-17
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 297
+  position {
+    x: -1.7053025658242404e-13
+    y: -1.0500000000000114
+  }
+  orientation {
+    x: -2.3397865225998828e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "propeller"
+  id: 300
+  position {
+    x: -1.1368683772161603e-13
+    y: -1.4316200000000094
+    z: -8.8817841970012523e-16
+  }
+  orientation {
+    x: 6.9575714469803141e-31
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "battery"
+  id: 303
+  position {
+    x: -5.6843418860808015e-14
+    y: -5.6843418860808015e-14
+  }
+  orientation {
+    x: -2.3397934815264397e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 305
+  position {
+    x: -1.7053025658242404e-13
+    y: -0.1370000000000573
+  }
+  orientation {
+    x: -2.3397934815264397e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 307
+  position {
+    x: -1.1368683772161603e-13
+    y: -2.8421709430404007e-14
+  }
+  orientation {
+    x: 2.5243548967072378e-29
+    y: 1.3736003667465936e-29
+    z: -0.70710678118654746
+    w: -0.70710678118654757
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 309
+  position {
+    x: -1.1368683772161603e-13
+    y: -0.12800000000001432
+  }
+  orientation {
+    x: -2.3397934815264397e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "base_link"
+  id: 318
+  position {
+  }
+  orientation {
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "horizontal_fins"
+  id: 328
+  position {
+    x: -5.6843418860808015e-14
+    y: -1.0500000000000114
+  }
+  orientation {
+    x: 3.4788620484669547e-18
+    y: 3.4788620484587957e-18
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "vertical_fins"
+  id: 331
+  position {
+    x: -5.6843418860808015e-14
+    y: -1.0500000000000114
+  }
+  orientation {
+    x: 8.1597405858092013e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "propeller"
+  id: 334
+  position {
+    x: -5.6843418860808015e-14
+    y: -1.4316200000000094
+  }
+  orientation {
+    x: 9.8294312875081474e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "battery"
+  id: 337
+  position {
+    y: -5.6843418860808015e-14
+  }
+  orientation {
+    x: 8.15974115004649e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "buoyancy_engine"
+  id: 339
+  position {
+    x: -5.6843418860808015e-14
+    y: -0.13700000000002888
+  }
+  orientation {
+    x: 8.15974115004649e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "acoustic_transponder"
+  id: 341
+  position {
+    x: -5.6843418860808015e-14
+    y: -2.8421709430404007e-14
+  }
+  orientation {
+    y: -3.0477967382922416e-30
+    z: -0.70710678118654746
+    w: -0.70710678118654757
+  }
+}
+pose {
+  name: "drop_weight"
+  id: 343
+  position {
+    x: -5.6843418860808015e-14
+    y: -0.12800000000001432
+  }
+  orientation {
+    x: 8.15974115004649e-30
+    z: -0.70710678118654746
+    w: 0.70710678118654757
+  }
+}
+pose {
+  name: "visual"
+  id: 6
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "sunVisual"
+  id: 8
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 11
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 21
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 24
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 27
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 30
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 47
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 57
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 60
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 63
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 66
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 81
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 91
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 94
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 97
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 100
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 115
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 125
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 128
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 131
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 134
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 149
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 159
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 162
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 165
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 168
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 183
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 193
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 196
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 199
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 202
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 217
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 227
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 230
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 233
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 236
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 251
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 261
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 264
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 267
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 270
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 285
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 295
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 298
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 301
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 304
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 319
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 329
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 332
+  position {
+    x: -1.05
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 335
+  position {
+    x: -1.43162
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "visual"
+  id: 338
+  position {
+  }
+  orientation {
+    w: 1
+  }
+}
+pose {
+  name: "sun"
+  id: 7
+  position {
+    z: 10
+  }
+  orientation {
+    w: 1
+  }
+}
+

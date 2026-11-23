@@ -1,0 +1,15 @@
+date: 2026-11-23T10:29:07+10:30
+n_agents: 10
+run: test
+target_simtime_s: 60
+world_sha256: dd9f6060d677cc5e58bab034f11c447674257b4bc44a9afb59602b902d05b84e
+gpu: NVIDIA GeForce RTX 4090 Laptop GPU, 570.133.07, P5, 39
+online: oui
+window: taille d'ouverture par défaut, pas de plein écran
+capture: 1  (1 = abonnés gz topic pendant le run -> run NON comptable)
+stat_window: 0 < SimTime <= 60 s
+uptime:  10:29:07 up  1:06,  1 user,  load average: 0.16, 0.23, 0.32
+free -m:
+              total       utilisé      libre     partagé tamp/cache   disponible
+Mem:          63909        1423       56598           6        5887       61765
+Partition d'échange:        2047           0        2047
