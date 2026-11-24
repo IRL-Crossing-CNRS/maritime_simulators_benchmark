@@ -6,9 +6,13 @@ This folder contains the benchmark results for [Stonefish](https://stonefish.rea
 
 ```text
 stonefish/
+├── data/
+│   └── stonefish_repeats/                  # Five repeated runs at the limits (see its README)
+├── process_stonefish_repeats.py            # Statistics over the repeated runs
 ├── results/
 │   ├── benchmark_summary.csv               # Aggregated summary across all protocols and agent counts
-│   └── protocol_<P>_agents_<N>_rtf_<R>_steps.csv   # One file per run
+│   ├── protocol_<P>_agents_<N>_rtf_<R>_steps.csv   # One file per run
+│   └── stonefish_repeats_*.csv             # Per-run and summary statistics of the repeated runs
 └── figures/
     ├── stonefish_protocol_A.eps / .pdf / .png
     ├── stonefish_protocol_B.eps / .pdf / .png

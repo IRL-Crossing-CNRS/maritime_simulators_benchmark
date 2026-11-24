@@ -1,0 +1,6 @@
+{
+  "output_dir": ".",
+  "warmup_steps": 50,
+  "measure_seconds": 300,
+  "runs": [ { "protocol": "A", "agents": [9], "target_rtf": 1 } ]
+}

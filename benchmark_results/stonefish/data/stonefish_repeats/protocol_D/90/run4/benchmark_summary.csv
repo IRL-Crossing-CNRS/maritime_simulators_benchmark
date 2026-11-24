@@ -1,0 +1,2 @@
+protocol,agents,step_size_ms,target_rtf,rendering,mean_rtf,min_rtf,p95_rtf,mean_step_ms,p95_step_ms,mean_fps,max_fps,p95_fps,rtf_ok,status
+D-ai-headless,90,30.303030,5.000000,false,2.306805,1.463461,2.448125,13.147061,13.723014,0.000000,0.000000,0.000000,true,ok

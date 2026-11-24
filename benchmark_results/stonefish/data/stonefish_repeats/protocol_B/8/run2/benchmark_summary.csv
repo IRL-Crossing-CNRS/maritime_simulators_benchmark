@@ -1,0 +1,2 @@
+protocol,agents,step_size_ms,target_rtf,rendering,mean_rtf,min_rtf,p95_rtf,mean_step_ms,p95_step_ms,mean_fps,max_fps,p95_fps,rtf_ok,status
+B-control,8,30.303030,1.000000,true,1.102918,0.969762,0.999323,30.303834,30.509277,2065.399191,2230.858270,2083.335202,true,ok

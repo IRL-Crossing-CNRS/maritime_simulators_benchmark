@@ -1,0 +1,2 @@
+protocol,agents,step_size_ms,target_rtf,rendering,mean_rtf,min_rtf,p95_rtf,mean_step_ms,p95_step_ms,mean_fps,max_fps,p95_fps,rtf_ok,status
+A-human-loop,8,200.000000,1.000000,true,0.999481,0.997991,0.999935,200.103812,200.193702,2069.510853,2102.913670,2086.509692,true,ok
