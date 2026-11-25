@@ -53,6 +53,48 @@ Protocol support per simulator:
 
 Protocols A and B measure **maximum swarm size** before a time budget is exceeded (200 ms for A, 30 ms for B). Protocols C and D measure the **Real-Time Factor (RTF)**: how many times faster than wall-clock the simulator runs. RTF > 1 means faster than real time (FTRT).
 
+## Repeated runs
+
+Each size below was run 5 times on the same host. A run is within budget if its mean step stays within the step + 2 %: 204 ms for A, 30.91 ms for B, and 122.4 ms for LRAUVSim (120 ms + 2 %). Values are mean ± 95 % confidence interval over the 5 runs (Student t), with the min–max of the run means in brackets.
+
+### Protocols A and B: maximum swarm size
+
+| Simulator | Prot. | Agents | Mean step (ms) | Runs within budget | p95 (ms) | p99 (ms) | max (ms) |
+|---|---|---|---|---|---|---|---|
+| HoloOcean | A | 3205 | 203.8 ± 0.8 (202.7–204.3) | 2/5 | 216.9 ± 1.3 | 236.6 ± 0.4 | 246.6 ± 4.3 |
+| HoloOcean | A | 3210 | 202.6 ± 1.2 (201.3–203.8) | 5/5 | 216.4 ± 1.5 | 236.1 ± 2.1 | 245.4 ± 2.5 |
+| HoloOcean | B | 10 | 31.3 ± 0.2 (31.1–31.4) | 0/5 | 36.6 ± 0.1 | 38.2 ± 0.2 | 40.9 ± 0.7 |
+| Stonefish | A | 8 | 200.1 ± 0.0 | 5/5 | 200.2 ± 0.0 | 200.2 ± 0.0 | 200.5 ± 0.2 |
+| Stonefish | A | 9 | crash (signal 11) | 0/5 | – | – | – |
+| Stonefish | B | 8 | 30.3 ± 0.0 | 5/5 | 30.5 ± 0.0 | 30.6 ± 0.0 | 31.3 ± 0.3 |
+| Stonefish | B | 9 | crash (signal 11) | 0/5 | – | – | – |
+| LRAUVSim | A | 115 | 121.9 ± 0.1 (121.8–122.0) | 5/5 | 127.6 ± 0.3 | 130.6 ± 0.4 | 144.5 ± 8.1 |
+| LRAUVSim | A | 120 | 123.8 ± 0.2 (123.7–124.1) | 0/5 | 131.4 ± 0.3 | 134.2 ± 0.5 | 145.3 ± 6.7 |
+| UUVSim | A | 130 | 203.6 ± 1.2 (202.6–204.8) | 3/5 | 277.5 ± 1.1 | 292.4 ± 2.2 | 313.7 ± 12.9 |
+| UUVSim | A | 135 | 216.9 ± 2.4 (214.4–219.5) | 0/5 | 293.7 ± 3.7 | 310.9 ± 4.4 | 324.3 ± 6.7 |
+| UUVSim | B | 50 | 27.1 ± 0.2 (26.9–27.3) | 5/5 | 37.2 ± 0.5 | 43.7 ± 1.2 | 60.3 ± 3.9 |
+| UUVSim | B | 55 | 31.5 ± 0.3 (31.1–31.7) | 0/5 | 41.3 ± 0.4 | 46.7 ± 1.2 | 63.4 ± 3.0 |
+| LOTUSim | A, B | | *runs in progress, to be added* | | | | |
+
+### Protocols C and D: real-time factor
+
+| Simulator | Prot. | Agents | RTF | Runs above 2× |
+|---|---|---|---|---|
+| HoloOcean | D | 1 | 1.040 ± 0.007 (1.034–1.048) | – |
+| Stonefish | D | 1 | 230.1 ± 8.7 (222.0–236.0) | – |
+| Stonefish | D | 90 | 2.32 ± 0.02 (2.29–2.34) | 5/5 |
+| UUVSim | C | 1 | 167.0 ± 2.0 (165.4–169.3) | – |
+| UUVSim | C | 30 | 2.47 ± 0.05 (2.43–2.54) | 5/5 |
+| UUVSim | C | 35 | 2.01 ± 0.03 (1.99–2.04) | 3/5 |
+| UUVSim | D | 1 | 184.6 ± 1.5 (183.3–186.1) | – |
+| UUVSim | D | 35 | 2.10 ± 0.07 (2.04–2.16) | 5/5 |
+| UUVSim | D | 40 | 1.68 ± 0.02 (1.65–1.70) | 0/5 |
+| LOTUSim | C, D | | *runs in progress, to be added* | |
+
+UUVSim sizes were chosen by a single-run sweep (A: 130, 135; B: 30 to 55), then each was run 5 times.
+
+Per-run values and traces: [HoloOcean](benchmark_results/holoocean/data/holoocean_repeats/README.md), [Stonefish](benchmark_results/stonefish/data/stonefish_repeats/README.md), [LRAUVSim](benchmark_results/gazebo_based/src/benchmark_results/benchmark_lrauv/results/lrauvsim_repeats_per_run.csv), [UUVSim](benchmark_results/gazebo_based/src/benchmark_results/benchmark_bluerov/data/uuvsim_repeats/README.md).
+
 ## benchmark_code
 
 Contains the code to run benchmarks for all five simulators. Each simulator has its own subfolder with a README explaining how to install dependencies and run the benchmark.

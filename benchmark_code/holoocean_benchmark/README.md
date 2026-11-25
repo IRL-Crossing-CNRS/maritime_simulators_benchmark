@@ -68,7 +68,6 @@ Before launching a benchmark run:
 - Disconnect from the internet
 - Disconnect any additional display (second screen...)
 - Set the GPU through NVIDIA to performance mode
-- Once HoloOcean opens, extend it to full screen (required for consistent FPS measurement)
 
 ```bash
 conda activate benchmark_holoocean

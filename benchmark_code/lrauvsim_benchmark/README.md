@@ -181,7 +181,6 @@ Before launching a benchmark run:
 - Disconnect from the internet
 - Disconnect any additional display (second screen...)
 - Set the GPU through NVIDIA to performance
-- Once Gazebo opens, extend it to full screen (required for consistent FPS measurement)
 
 ### Build and launch
 

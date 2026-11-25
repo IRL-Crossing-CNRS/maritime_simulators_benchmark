@@ -103,7 +103,6 @@ Before launching a benchmark run:
 - Disconnect from the internet
 - Disconnect any additional display (second screen...)
 - Set the GPU through NVIDIA to performance mode
-- Once Stonefish opens, extend it to full screen (required for consistent FPS measurement)
 
 Each simulation run produces results for **one specific combination of (protocol, agent count, target RTF)**.
 To reproduce the complete dataset, run the benchmark individually for every data point listed below.

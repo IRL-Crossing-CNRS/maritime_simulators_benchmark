@@ -141,7 +141,6 @@ Before launching a benchmark run:
 - Disconnect from the internet
 - Disconnect any additional display (second screen...)
 - Set the GPU through NVIDIA to performance mode
-- Once LOTUSim opens, extend it to full screen (required for consistent FPS measurement)
 
 With the Unity executable running on the host, start `benchmark.sh` inside the container (step 5 above), using `lrauv_sensors_unity.json` as the config file.
 
