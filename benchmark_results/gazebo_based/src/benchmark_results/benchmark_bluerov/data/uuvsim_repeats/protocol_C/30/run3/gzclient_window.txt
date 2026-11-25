@@ -1,0 +1,7 @@
+DP-2 connected primary 2560x1600+0+0 (normal left inverted right x axis y axis) 388mm x 242mm
+   2560x1600     60.00*+ 240.00  
+  Absolute upper-left X:  67
+  Absolute upper-left Y:  55
+  Width: 2493
+  Height: 1545
+  Map State: IsViewable

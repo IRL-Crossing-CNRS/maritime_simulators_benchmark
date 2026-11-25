@@ -18,7 +18,9 @@ uuvsim_repeats/
 │   ├── 50/probe1, run1..run5    # ceiling of protocol B
 │   └── 55/probe1, run1..run5    # next size above
 ├── protocol_C/
-│   └── 1/run1..run5             # RTF peak, rendering on
+│   ├── 1/run1..run5             # RTF peak, rendering on
+│   ├── 30/run1..run5            # fleet above 2x, rendering on
+│   └── 35/run1..run5            # largest fleet above 2x in the reference
 └── protocol_D/
     ├── 1/run1..run5             # RTF peak, headless
     ├── 35/run1..run5            # largest fleet above 2x
@@ -69,7 +71,8 @@ the worlds and launch file of
   RTF was uncapped.
 - Every process is killed and checked gone between two runs, followed by 15 s idle.
 
-Campaigns of 2026-11-25: A 130, C and D from 11:39; B from 15:03; A 135 and B 55 from 16:32.
+Campaigns of 2026-11-25: A 130, C and D from 11:39; B from 15:03; A 135 and B 55 from 16:32;
+C 30 and C 35 from 18:30.
 During the measurements the CPU package reached 90–100 °C (`machine.csv`).
 
 ## Statistics
@@ -91,7 +94,7 @@ writes `results/uuvsim_repeats_per_run.csv` (one row per run) and
   simulated time / wall time over the window.
 - Verdict per run: protocol A passes if `mean_step_ms` ≤ 204 ms (200 ms step + 2 %),
   protocol B if `mean_step_ms` ≤ 30.91 ms (30.30 ms step + 2 %). C and D are compared with
-  the reference RTF (±10 %); D at 35 agents must stay above 2x.
+  the reference RTF (±10 %); C at 30 and 35 agents and D at 35 agents must stay above 2x.
 
 | Point | Runs | Result (mean ± 95 % CI, min–max) | Reference |
 |---|---|---|---|
@@ -100,6 +103,8 @@ writes `results/uuvsim_repeats_per_run.csv` (one row per run) and
 | B 50 | 5 | 27.06 ± 0.17 ms, 26.93–27.28 | – |
 | B 55 | 5 | 31.52 ± 0.33 ms, 31.05–31.71 | – |
 | C 1 | 5 | RTF 167.01 ± 1.99, 165.42–169.30 | 189.01 |
+| C 30 | 5 | RTF 2.47 ± 0.05, 2.43–2.54 | 2.63 |
+| C 35 | 5 | RTF 2.01 ± 0.03, 1.99–2.04 (3 of 5 runs above 2x) | 2.11 |
 | D 1 | 5 | RTF 184.61 ± 1.51, 183.28–186.08 | 214.98 |
 | D 35 | 5 | RTF 2.10 ± 0.07, 2.04–2.16 | 2.25 |
 | D 40 | 5 | RTF 1.68 ± 0.02, 1.65–1.70 | 1.85 |

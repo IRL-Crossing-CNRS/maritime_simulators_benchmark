@@ -139,7 +139,7 @@ physics_of()  { case $1 in A) echo "0.2 5" ;; B) echo "0.03 33.333" ;; *) echo "
 reference_of() {
     case "$1 $2" in
         "A 150"|"B 150") echo 16.20 ;;  "A 162"|"B 162") echo 82.10 ;;
-        "C 1") echo 189.01 ;;  "D 1") echo 214.98 ;;  "D 35") echo 2.25 ;;  "D 40") echo 1.85 ;;
+        "C 1") echo 189.01 ;;  "C 30") echo 2.63 ;;  "C 35") echo 2.11 ;;  "D 1") echo 214.98 ;;  "D 35") echo 2.25 ;;  "D 40") echo 1.85 ;;
         *) echo - ;;
     esac
 }
