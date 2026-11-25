@@ -1,0 +1,23 @@
+{
+  "sim_start": 4151.07, 
+  "wall_seconds": 300.0777280330658, 
+  "sim_end": 54679.05, 
+  "sim_seconds": 50527.98, 
+  "agents_at_end": 1, 
+  "seed": 3, 
+  "agents_at_start": 1, 
+  "update_times_lines": [
+    138400, 
+    1823104
+  ], 
+  "wall_end": 1795574124.771674, 
+  "render_fps_lines": [
+    24, 
+    624
+  ], 
+  "margin_seconds": 10.0, 
+  "agents_requested": 1, 
+  "rtf_samples": 1496, 
+  "spawn_seconds": 2.004, 
+  "wall_start": 1795573824.693946
+}

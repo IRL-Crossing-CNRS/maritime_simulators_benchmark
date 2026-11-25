@@ -23,6 +23,7 @@ gazebo_based/
   - `data/lrauvsim/` — LRAUVSim per-agent raw CSVs (`real_update.csv`, `rtf.csv`, `render_fps.csv`)
   - `data/lrauvsim_repeats/<n_agents>/run<k>/` (in `benchmark_lrauv/`) — five repeated LRAUVSim runs at 115 and 120 agents, summarised by `process_lrauvsim_repeats.py` into `results/lrauvsim_repeats_*.csv`
   - `data/uuv/AB/` — UUVSim per-agent raw CSVs (`update_times.csv`, `benchmark_rtf.csv`, `render_fps.csv`)
+  - `data/uuvsim_repeats/protocol_<P>/<n_agents>/run<k>/` (in `benchmark_bluerov/`) — five repeated UUVSim runs per point of protocols A to D, summarised by `process_uuvsim_repeats.py` into `results/uuvsim_repeats_*.csv`
   - `data/LRAUVSim_results.csv` / `data/UUVSim_results.csv` — pre-processed summary CSVs (auto-generated)
 - `results/` — generated summary CSVs and plots (EPS, PDF, and PNG)
 - Python scripts to process raw data and generate plots

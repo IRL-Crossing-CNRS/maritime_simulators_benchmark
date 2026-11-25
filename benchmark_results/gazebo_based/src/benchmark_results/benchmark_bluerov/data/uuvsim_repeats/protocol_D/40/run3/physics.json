@@ -1,0 +1,5 @@
+{
+  "max_update_rate": 0.0, 
+  "time_step": 0.03, 
+  "pause": false
+}
