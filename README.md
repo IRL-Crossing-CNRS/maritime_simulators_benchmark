@@ -74,7 +74,13 @@ Each size below was run 5 times on the same host. A run is within budget if its 
 | UUVSim | A | 135 | 216.9 ± 2.4 (214.4–219.5) | 0/5 | 293.7 ± 3.7 | 310.9 ± 4.4 | 324.3 ± 6.7 |
 | UUVSim | B | 50 | 27.1 ± 0.2 (26.9–27.3) | 5/5 | 37.2 ± 0.5 | 43.7 ± 1.2 | 60.3 ± 3.9 |
 | UUVSim | B | 55 | 31.5 ± 0.3 (31.1–31.7) | 0/5 | 41.3 ± 0.4 | 46.7 ± 1.2 | 63.4 ± 3.0 |
-| LOTUSim | A, B | | *runs in progress, to be added* | | | | |
+| LOTUSim (BlueROV2) | A | 390 | 193.0 (191.0–194.5) | 3/3 | 217.1 | – | – |
+| LOTUSim (BlueROV2) | A | 400 | 202.5 ± 10.0 (189.8–216.3) | 4/6 | 226.8 ± 12.0 | – | – |
+| LOTUSim (LRAUV) | A | 750 | 199.4 | 1/1 | 234.2 | – | – |
+| LOTUSim (BlueROV2) | B | 50 | 30.2 (30.2–30.2) | 2/2 | 39.8 | – | – |
+| LOTUSim (BlueROV2) | B | 55 | 32.7 | 0/1 | 43.3 | – | – |
+| LOTUSim (LRAUV) | B | 85 | 30.3 | 1/1 | 40.8 | – | – |
+| LOTUSim (LRAUV) | B | 90 | 32.9 | 0/1 | 43.8 | – | – |
 
 ### Protocols C and D: real-time factor
 
@@ -89,7 +95,13 @@ Each size below was run 5 times on the same host. A run is within budget if its 
 | UUVSim | D | 1 | 184.6 ± 1.5 (183.3–186.1) | – |
 | UUVSim | D | 35 | 2.10 ± 0.07 (2.04–2.16) | 5/5 |
 | UUVSim | D | 40 | 1.68 ± 0.02 (1.65–1.70) | 0/5 |
-| LOTUSim | C, D | | *runs in progress, to be added* | |
+| LOTUSim (BlueROV2) | C | 1 | 11.2 ± 0.6 (10.4–11.7) | – |
+| LOTUSim (LRAUV) | C | 1 | 16.4 ± 0.3 (16.1–16.7) | – |
+| LOTUSim (BlueROV2) | D | 1 | 16.1 ± 0.5 (15.5–16.5) | – |
+| LOTUSim (BlueROV2) | D | 23 | 1.96 ± 0.04 (1.92–2.01) | 1/5 |
+| LOTUSim (BlueROV2) | D | 25 | 1.77 ± 0.02 (1.75–1.79) | 0/5 |
+
+LOTUSim runs are still in progress (some A and B sizes have fewer than 5 runs). Its A and B mean step is the `Update (ms)` timing, and its p95 is the full step (`Preparation Update (ms)`).
 
 UUVSim sizes were chosen by a single-run sweep (A: 130, 135; B: 30 to 55), then each was run 5 times.
 
